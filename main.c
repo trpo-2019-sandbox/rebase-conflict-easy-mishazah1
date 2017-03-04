@@ -23,9 +23,18 @@ int main()
     const int min = min_element(arr, 10);
 
     printf("Array: ");
+
     int i;
     for (i = 0; i < 10; ++i) {
         const int min = min_element(arr, N_ELEMENTS(arr));
+
+        int i = 0;
+        printf("%d", arr[i]);
+        ++i;
+        for (; i < N_ELEMENTS(arr); ++i) {
+            printf(", %d", arr[i]);
+        }
+        printf("\n");
 
         printf("Array: ");
         int i;
